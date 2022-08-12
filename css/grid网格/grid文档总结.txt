@@ -1,0 +1,29 @@
+父元素（网格容器）
+	display: grid/inline-grid; //设置网格容器
+
+	grid-template-columns:
+	grid-template-rows:
+
+	grid-row-gap：
+	grid-column-gap：
+	grid-gap：grid-row-gap  grid-column-gap;
+
+	justify-content:
+	align-content:
+
+	grid-template-areas:'myArea myArea myArea';
+
+子元素（网格项目）
+	行线
+	grid-row-start:
+	grid-row-end:
+	grid-row:
+
+	列线
+	grid-column-start: 
+  	grid-column-end: 
+	grid-column:
+
+	grid-area: grid-row-start  grid-column-start  grid-row-end grid-column-end;
+
+	grid-area: myArea; //与父元素的 grid-template-areas 属性配合使用

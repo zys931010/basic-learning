@@ -1,0 +1,25 @@
+父元素（flex容器）
+	display: flex; //设置flex容器
+	flex-direction：row; //设置主轴方向，默认值row，主轴为x轴，方向左->右
+		         row-reverse	//主轴为x轴，方向右->左
+		         column	//主轴为y轴，方向上->下
+		         column-reverse	//主轴为y轴，方向下->上
+	flex-wrap:
+	flex-flow:
+	justify-content: flex-start; //子元素在 flex 容器的的排列方式，默认值flex-start;，从 flex 容器的起始位置开始排列项目
+		         center;//在 flex 容器中居中排列项目
+		         flex-end;//从 flex 容器的终止位置开始排列项目
+		         space-between;//项目间保留一定间距地沿主轴居中排列
+		         space-around;//与space-between类似，但头尾两个项目不会紧贴容器边缘
+		         space-evenly;//在 flex 项目之间均匀分配空间，在 flex 容器的任一端都有一个完整的空间
+	align-items: 
+	align-content:
+
+子元素（flex项目）
+	order:
+	flex-grow:
+	flex-shrink:
+	flex-basis:
+	flex:
+	align-self:	
+		
