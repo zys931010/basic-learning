@@ -1,0 +1,59 @@
+什么是 CSS 动画
+  动画使元素逐渐从一种样式变为另一种样式;
+  您可以随意更改任意数量的 CSS 属性;
+  如需使用 CSS 动画，您必须首先为动画指定一些关键帧;
+  关键帧包含元素在特定时间所拥有的样式。
+
+animation动画：要使动画生效，必须将动画绑定到某个元素
+
+应用动画的元素
+    animation-name: example;  规定 @keyframes 动画的名称
+
+    animation-duration: 0s; 规定动画完成一个周期应花费的时间
+
+    animation-timing-function: 规定动画的速度曲线
+                     ease 指定从慢速开始，然后加快，然后缓慢结束的动画（默认）
+                     linear 规定从开始到结束的速度相同的动画
+                     ease-in 规定慢速开始的动画
+                     ease-out 规定慢速结束的动画
+                     ease-in-out 指定开始和结束较慢的动画
+                     cubic-bezier(n,n,n,n) 运行您在三次贝塞尔函数中定义自己的值
+
+    animation-delay: 0s; 规定动画开始的延迟
+                     2s; 开始动画前有2秒的延迟
+                     -2s; 动画将开始播放，如同已播放2秒 
+
+    animation-iteration-count: 0; 规定动画应播放的次数
+                     3; 在停止前把动画运行3次
+                     infinite; 使动画永远持续下去
+
+    animation-direction: 规定动画是向前播放、向后播放还是交替播放
+                     normal  动画正常播放(向前),默认值
+                     reverse  动画以反方向播放（向后）
+                     alternate  动画先向前播放，然后向后
+                     alternate-reverse  动画先向后播放，然后向前
+
+    animation-fill-mode: 规定元素在不播放动画时的样式（在开始前、结束后，或两者同时）
+                     none 默认值,动画在执行之前或之后不会对元素应用任何样式
+
+                     forwards 元素将保留由最后一个关键帧设置的样式值（依赖 animation-direction 和 animation-iteration-count）。
+
+                     backwards 元素将获取由第一个关键帧设置的样式值（取决于 animation-direction），并在动画延迟期间保留该值。
+                     
+                     both 动画会同时遵循向前和向后的规则，从而在两个方向上扩展动画属性。
+
+    animation: 简写
+          name duration timing-function delay iteration-count direction fill-mode;
+
+动画规则代码
+     @keyframes example {
+      //法1
+      from {}
+      to {}
+      //法2
+      0%{}
+      25%{}
+      50%{}
+      75%{}
+      100%{}
+     }
