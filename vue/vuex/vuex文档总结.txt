@@ -1,0 +1,30 @@
+vuex是一个专为vue.js应用程序开发的状态管理模式
+  就是一个加强版的data，在单页应用中会有一个data函数，管理当前应用的状态。处理大量的
+  在组件间传递的数据，直接定义一个全局的data属性保存就行了
+
+  如果我们的页面比较简单，切记千万不要没事找事引入vuex，我们使用vuex是因为项目变得复杂之后，有很多数据需要在父组件、子组件和孙组件之间传递，处理起来很繁琐，于是就需要vuex这样一个可以对这一部分数据进行统一管理的东西
+
+  也是响应式
+
+什么情况需要使用vuex管理状态在多个组件间共享
+  大型项目中组件很多，多个组件中共用的数据
+  例如：用户的登录状态、用户名称、头像、地理位置信息等
+  例如：商品的收藏、购物车中的物品
+
+安装npm install vuex@next --save
+创建vuex的store实例：src->store->index.js
+main.js引用store实例
+模板中应用store
+
+解决template报蓝错，在jsconfig.json->compilerOptions引入下面代码  
+  "jsx": "preserve", 
+
+state
+
+getters
+
+mutations
+
+actions
+
+modules
